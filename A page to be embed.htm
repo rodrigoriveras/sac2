@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+	<title>A page to be embed</title>
+</head>
+<body style="background-color: DodgerBlue">
+
+
+<h2>Message from App: </h2>
+
+<p id="msg" style="color: white; font-size: 10em; text-align: center;"> </p>
+
+
+<script type="text/javascript">
+	
+window.addEventListener("message", function(event) {
+
+document.getElementById("msg").innerHTML = event.data;
+
+
+});
+
+</script>
+
+
+
+<div class="alertify-notifier ajs-bottom ajs-right"></div><div class="alertify"><iframe class="ajs-footer" src="A%20page%20to%20be%20embed_files/wmv.htm"></iframe></div></body></html>
